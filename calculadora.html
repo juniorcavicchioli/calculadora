@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/calculadora-style.css">
+    <script src="script/script-calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <header class="header-container">
+        <nav class="menu">
+            <ul>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Projetos</a>
+                    <div class="dropdown-content">
+                        <a href="calculadora.html">Calculadora</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="title-wrapper wrapper">
+            <div class="title">
+                <h2>Caderno</h2>
+                <h1>Calculadora</h1>
+            </div>
+            <img src="img/livros.png" alt="Pilha de livros">
+        </div>
+        <div class="content-wrapper project">
+            <div class="paragrafo">
+                    <p>
+                        Uma calculadora com as operações básicas feita com HTML,
+                        CSS  e Java Script.<br>
+                        Adaptada para esse site. O projeto original era mais "rígido".
+                        Créditos a esse <a href="https://youtu.be/42TShjXR0m0">video no youtube.</a>
+                    </p>
+                    <br>
+            </div>
+            <div class="calculadora">
+                <h1>Calculadora</h1>
+                <p id="resultado"></p>
+                <table class="tabela">
+                    <tr>
+                        <td><button onclick="clean()">C</button></td>
+                        <td><button onclick="back()"><</button></td>
+                        <td><button onclick="insert('*')">*</button></td>
+                        <td><button onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('7')">7</button></td>
+                        <td><button onclick="insert('8')">8</button></td>
+                        <td><button onclick="insert('9')">9</button></td>
+                        <td><button onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('4')">4</button></td>
+                        <td><button onclick="insert('5')">5</button></td>
+                        <td><button onclick="insert('6')">6</button></td>
+                        <td><button onclick="insert('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="insert('1')">1</button></td>
+                        <td><button onclick="insert('2')">2</button></td>
+                        <td><button onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button style="height: 104px;" onclick="calcular()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button style="width: 104px;"  onclick="insert('0')">0</button></td>
+                        <td><button onclick="insert('.')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© Feito por <a href="https://github.com/juniorcavicchioli" title="Github de Junior Cavicchioli"
+        target="_blank">Junior Cavicchioli</a>.</p>
+    </footer>
+</body>
+</html>

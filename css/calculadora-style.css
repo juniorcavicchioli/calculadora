@@ -1,0 +1,38 @@
+.calculadora {
+    background-color: rgba(41, 29, 40,0.8);
+    border-radius: 20px;
+    padding: 20px;
+    width: fit-content;
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.5);
+}
+.calculadora h1 {
+    color: white;
+    text-transform: uppercase;
+    font-size: x-large;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+.tabela button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 1px;
+    cursor: pointer;
+    background-color: rgb(22, 11, 22);
+    border: none;
+    color: white;
+}
+.tabela button:hover{
+    background-color: red;
+}
+#resultado {
+    width: auto;
+    height: 30px;
+    background-color: white;
+    margin: 3px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 1px;
+    
+}
